@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	font-family: "Montserrat" sans-serif;
+}
+.box {
+	margin: 0px auto;
+	width: 500px;
+	align-items: center;
+	background-color: #ffe7d6;
+	font-family: "Montserrat" sans-serif;
+	font-weight: 500;
+	height: 90vh;
+}
+.box h1 {
+	padding: 10px;
+	text-align: center;
+	margin-bottom: auto;
+	font-family: "Montserrat" sans-serif;
+	font-weight: 500;
+	margin-top: 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.incrementBtn {
+	outline: none;
+	font-size: 48px;
+	color: mediumslateblue;
+	margin: 4px;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 18px;
+	padding: 10px 5px;
+	background-color: #c98686;
+	border: none;
+	color: #e7cfbc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.decrementBtn {
+	outline: none;
+	font-size: 48px;
+	color: mediumslateblue;
+	margin: 4px;
+	/* display: inline-block; */
+	cursor: pointer;
+	border-radius: 18px;
+	padding: 10px 10px;
+	background-color: #c98686;
+	border: none;
+	color: white;
+}
+.resetBtn {
+	outline: none;
+	font-size: 16px;
+	color: mediumslateblue;
+	margin: 4px;
+	display: block;
+	cursor: pointer;
+	border-radius: 18px;
+	padding: 10px 10px;
+	background-color: #c98686;
+	border: none;
+	color: white;
+	margin: 20px 43%;
+}
+.valueCounter {
+	font-size: 48px;
+	text-align: center;
+	margin: auto;
+	font-family: "Montserrat" sans-serif;
+	font-weight: 500;
+	margin-top: 15px;
+}
+.btnDiv {
+	margin: 100px 200px 0 200px;
+}
+.dayTime {
+	background-color: navajowhite;
+}
+.nightBtn {
+	background-color: #c98686;
+	color: white;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	padding: 5px;
+	margin: 5px;
+	cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+	transition: ease-in .2s;
+	background-color: rgba(201, 134, 134, .49);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+	position: absolute;
+	bottom: 100px;
+	left: 700px;
 }
